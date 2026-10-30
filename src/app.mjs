@@ -20,6 +20,7 @@ async function start(){
       const card=node('article',''),head=node('div',''),number=node('span',String(project.id).padStart(3,'0'));
       number.className='number';head.className='card-head';head.append(number,node('span',project.implementation==='published'?'Working code published':'Planned build'));card.append(head);
       const heading=node('h2',''),link=node('a',project.name);link.href=project.url;heading.append(link);card.append(heading,node('p',project.scope));
+      if(project.manual_testing){const testing=node('a','Run tests and demo');testing.href=project.testing_url;card.append(testing);}
       const details=node('details','');details.append(node('summary','Verification and evidence'),node('p',project.required_checks));
       details.append(node('p',`${project.local_tests} local tests recorded. Repository existence ${project.repository_verified?'verified':'unverified'}.`));
       if(project.commit){const commit=node('a','Implementation commit');commit.href=project.url+'/commit/'+project.commit;details.append(commit);}

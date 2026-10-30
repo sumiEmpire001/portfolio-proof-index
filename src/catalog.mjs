@@ -17,6 +17,8 @@ export function validate(manifest) {
     if (project.implementation === 'planned' && (project.local_tests !== 0 || project.commit || project.ci_url)) errors.push(label + ': planned project claims implementation evidence');
     if (project.implementation === 'published' && (!project.repository_verified || !/^[0-9a-f]{40}$/.test(project.commit ?? '') || project.local_tests < 1)) errors.push(label + ': published implementation lacks repository, commit or local test evidence');
     if (project.ci_url && !new RegExp(`^https://github\\.com/${manifest.owner}/${project.name}/actions/runs/[0-9]+$`).test(project.ci_url)) errors.push(label + ': CI evidence must point to this repository');
+    if (project.manual_testing && (project.implementation !== 'published' || project.testing_url !== project.url + '/actions/workflows/test.yml')) errors.push(label + ': manual testing requires published code and this repository workflow');
+    if (!project.manual_testing && project.testing_url) errors.push(label + ': testing link requires enabled manual testing');
   }
   return errors;
 }
