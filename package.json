@@ -1,0 +1,1 @@
+{"name":"@lord-sumi/portfolio-proof-index","version":"0.1.0","private":true,"type":"module","engines":{"node":">=20"},"scripts":{"test":"node --test","build":"node src/build.mjs","validate":"node src/cli.mjs validate","summary":"node src/cli.mjs summary"},"license":"MIT"}

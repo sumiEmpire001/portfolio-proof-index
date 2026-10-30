@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Lord_Sumi's 100-project portfolio: scope, implementation status and verification evidence.">
+  <title>Lord_Sumi · Portfolio Proof Index</title>
+  <link rel="stylesheet" href="styles.css"><script type="module" src="src/app.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#projects">Skip to projects</a>
+  <header><p class="eyebrow">BUILD LOG / 100 DISTINCT PROJECTS</p><h1 id="owner">Lord_Sumi</h1><p class="intro">A portfolio you can inspect.</p><p>Python, JavaScript, mobile and embedded systems. Explore the scope, open the code, and check the evidence.</p><p id="stats" role="status" aria-live="polite">Loading project catalogue…</p><p id="as-of" class="muted"></p></header>
+  <main id="projects">
+    <section class="controls" aria-label="Project filters">
+      <label>Search projects<input id="search" type="search" placeholder="e.g. queue, sensor, offline"></label>
+      <label>Area<select id="category"><option value="">All areas</option></select></label>
+      <label>Code status<select id="status"><option value="">All statuses</option><option value="published">Working code published</option><option value="planned">Planned build</option></select></label>
+      <button id="reset" type="button">Reset filters</button>
+    </section>
+    <p id="error" role="alert" hidden></p><p id="count" aria-live="polite"></p>
+    <div id="cards" class="grid"></div>
+    <noscript><p>JavaScript is required for filters. The full catalogue is available in <a href="projects.json">projects.json</a>.</p></noscript>
+  </main>
+  <footer>Repository existence and implementation completion are tracked separately. A passing test suite supports specific checks; it does not prove perfection.</footer>
+</body></html>

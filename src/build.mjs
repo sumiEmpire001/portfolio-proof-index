@@ -1,0 +1,14 @@
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import {validate} from './catalog.mjs';
+const root=new URL('../',import.meta.url),read=path=>readFileSync(new URL(path,root),'utf8');
+const manifest=JSON.parse(read('projects.json')),errors=validate(manifest);
+if(errors.length)throw new Error(errors.join('\n'));
+const data=JSON.stringify(manifest).replaceAll('<','\\u003c');
+const catalog=read('src/catalog.mjs').replaceAll('export function','function');
+const app=read('src/app.mjs').replace(/^import .*;\n/,'');
+let html=read('index.html').replace('<link rel="stylesheet" href="styles.css">',()=>'<style>'+read('styles.css')+'</style>');
+html=html.replace('<script type="module" src="src/app.mjs"></script>','');
+html=html.replace('</body>',()=>`<script id="project-data" type="application/json">${data}</script><script>${catalog}\n${app}</script></body>`);
+mkdirSync(new URL('dist/',root),{recursive:true});
+writeFileSync(new URL('dist/index.html',root),html);
+console.log('Built dist/index.html (self-contained offline preview)');
