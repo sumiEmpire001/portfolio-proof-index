@@ -1,5 +1,8 @@
 name: Catalogue tests
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
 permissions:
   contents: read
 jobs:
@@ -14,3 +17,15 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - run: npm test
+
+      - name: Run sample scenario
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          npm run summary
+          npm run build
+      - name: Downloadable offline browser app
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@v4
+        with:
+          name: portfolio-browser-node-${{ matrix.node }}
+          path: dist/index.html
