@@ -144,7 +144,7 @@
       "implementation": "published",
       "local_tests": 14,
       "commit": "168c2aa204fa501968d22dd270369ac87ce18d3a",
-      "ci_url": null
+      "ci_url": "https://github.com/sumiEmpire001/evidence-search/actions/runs/41140717574"
     },
     {
       "id": 12,
@@ -934,10 +934,10 @@
       "category": "Data engineering and analytics",
       "url": "https://github.com/sumiEmpire001/csv-reconcile",
       "repository_verified": true,
-      "implementation": "planned",
-      "local_tests": 0,
-      "commit": null,
-      "ci_url": null
+      "implementation": "published",
+      "local_tests": 12,
+      "commit": "a25e3d018b2e3b7e521783e1c96a0569620e615d",
+      "ci_url": "https://github.com/sumiEmpire001/csv-reconcile/actions/runs/41142545619"
     },
     {
       "id": 73,
@@ -1067,7 +1067,7 @@
       "implementation": "published",
       "local_tests": 12,
       "commit": "730629120f806368421c2ad1f4cb61193742ddfd",
-      "ci_url": null
+      "ci_url": "https://github.com/sumiEmpire001/cachecraft/actions/runs/41141214198"
     },
     {
       "id": 83,
@@ -1077,10 +1077,10 @@
       "category": "Systems and computer science",
       "url": "https://github.com/sumiEmpire001/minidb-journal",
       "repository_verified": true,
-      "implementation": "planned",
-      "local_tests": 0,
-      "commit": null,
-      "ci_url": null
+      "implementation": "published",
+      "local_tests": 15,
+      "commit": "b55ed26f0dd9f209b268fd33d416ddb29b5573e8",
+      "ci_url": "https://github.com/sumiEmpire001/minidb-journal/actions/runs/41141937689"
     },
     {
       "id": 84,
@@ -1181,10 +1181,10 @@
       "category": "Reliability, quality and accessibility",
       "url": "https://github.com/sumiEmpire001/backup-verifier",
       "repository_verified": true,
-      "implementation": "planned",
-      "local_tests": 0,
-      "commit": null,
-      "ci_url": null
+      "implementation": "published",
+      "local_tests": 13,
+      "commit": "d7d48764b80b2ba2049d70d5e34d8ceb57de69b6",
+      "ci_url": "https://github.com/sumiEmpire001/backup-verifier/actions/runs/41142248440"
     },
     {
       "id": 92,
@@ -1298,10 +1298,10 @@
       "category": "Reliability, quality and accessibility",
       "url": "https://github.com/sumiEmpire001/portfolio-proof-index",
       "repository_verified": true,
-      "implementation": "planned",
-      "local_tests": 0,
-      "commit": null,
-      "ci_url": null
+      "implementation": "published",
+      "local_tests": 11,
+      "commit": "30e78001c4792e690b06f848e2d18d428b3fd46e",
+      "ci_url": "https://github.com/sumiEmpire001/portfolio-proof-index/actions/runs/41141299426"
     }
   ]
 }
