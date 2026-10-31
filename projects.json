@@ -181,12 +181,12 @@
       "category": "AI and information applications",
       "url": "https://github.com/sumiEmpire001/meeting-action-ledger",
       "repository_verified": true,
-      "implementation": "planned",
-      "local_tests": 0,
-      "commit": null,
-      "ci_url": null,
-      "manual_testing": false,
-      "testing_url": null
+      "implementation": "published",
+      "local_tests": 13,
+      "commit": "0703540d69e58d251b405547bb4e6be3bb78959e",
+      "ci_url": "https://github.com/sumiEmpire001/meeting-action-ledger/actions/runs/41151073094",
+      "manual_testing": true,
+      "testing_url": "https://github.com/sumiEmpire001/meeting-action-ledger/actions/workflows/test.yml"
     },
     {
       "id": 13,
@@ -196,12 +196,12 @@
       "category": "AI and information applications",
       "url": "https://github.com/sumiEmpire001/dataset-steward",
       "repository_verified": true,
-      "implementation": "planned",
-      "local_tests": 0,
-      "commit": null,
-      "ci_url": null,
-      "manual_testing": false,
-      "testing_url": null
+      "implementation": "published",
+      "local_tests": 12,
+      "commit": "5d5d23e49a6ef46e91fe30678bf7d068f0fb8688",
+      "ci_url": "https://github.com/sumiEmpire001/dataset-steward/actions/runs/41151282423",
+      "manual_testing": true,
+      "testing_url": "https://github.com/sumiEmpire001/dataset-steward/actions/workflows/test.yml"
     },
     {
       "id": 14,
@@ -1504,9 +1504,9 @@
       "url": "https://github.com/sumiEmpire001/portfolio-proof-index",
       "repository_verified": true,
       "implementation": "published",
-      "local_tests": 12,
-      "commit": "b261a464bf0f4d87ada63cc86bc647438b5a4e12",
-      "ci_url": "https://github.com/sumiEmpire001/portfolio-proof-index/actions/runs/41146577016",
+      "local_tests": 13,
+      "commit": "97747166a446d594e524d2ab5720d59ae518d344",
+      "ci_url": "https://github.com/sumiEmpire001/portfolio-proof-index/actions/runs/41151088333",
       "manual_testing": true,
       "testing_url": "https://github.com/sumiEmpire001/portfolio-proof-index/actions/workflows/test.yml"
     }

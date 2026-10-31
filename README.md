@@ -25,7 +25,7 @@ Open `dist/index.html` in your browser for a self-contained offline view. It emb
 - Text search combining all search words, category filtering and code-status filtering.
 - Direct **Run tests and demo** links for implemented projects, with manual GitHub workflows usable from a phone or computer.
 - Links to all 100 verified repositories, project-specific scopes and required checks.
-- Separate totals for repositories, implementations, local tests and verified CI runs.
+- Separate totals for repositories, implementations, local tests, CI browser scenarios and verified CI runs.
 - Commit and workflow evidence links for implemented projects when recorded.
 - Explicit empty results, reset filters, visible load/validation errors and a no-JavaScript data link.
 - Responsive layout, native labelled controls, keyboard focus styles and a skip link.
@@ -43,7 +43,7 @@ New code and test evidence must be verified before updating its record. A genera
 
 ## Verification
 
-Local checks on 31 October 2026: **12 tests passed**, covering the 100-record manifest, identity uniqueness, evidence consistency, search/filter composition, statistics, CLI subprocesses, test-control links and the offline build's embedded data and JavaScript syntax. A manual GitHub workflow was also launched successfully and produced downloadable browser artifacts. These checks do not constitute a full browser accessibility or screen-reader audit. Interactive browser verification remains pending because the available browser cannot open local file previews.
+Local checks on 31 October 2026: **13 tests passed**, covering the 100-record manifest, identity uniqueness, evidence consistency, search/filter composition, statistics, CLI subprocesses, test-control links, separate browser-scenario evidence and the offline build's embedded data and JavaScript syntax. A manual GitHub workflow was also launched successfully and produced downloadable browser artifacts. These checks do not constitute a full browser accessibility or screen-reader audit. Interactive browser verification remains pending because the available browser cannot open local file previews.
 
 ## Limitations
 
