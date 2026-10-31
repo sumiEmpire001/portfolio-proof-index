@@ -6,6 +6,7 @@ import {validate,select,summary} from '../src/catalog.mjs';
 const manifest=JSON.parse(readFileSync(new URL('../projects.json',import.meta.url),'utf8'));
 
 test('all 100 records have unique identities, correct links and consistent evidence',()=>assert.deepEqual(validate(manifest),[]));
+test('browser scenario counts require CI evidence and remain separate from local totals',()=>{const bad=structuredClone(manifest),p=bad.projects.find(p=>p.implementation==='planned');p.browser_tests=3;assert.ok(validate(bad).some(e=>e.includes('browser tests require')));p.browser_tests=-1;assert.ok(validate(bad).some(e=>e.includes('invalid browser test count')));const totals=summary(manifest.projects);assert.equal(totals.browser_tests,manifest.projects.reduce((sum,p)=>sum+(p.browser_tests??0),0));assert.equal(totals.local_tests,manifest.projects.reduce((sum,p)=>sum+p.local_tests,0));});
 test('duplicate IDs and names are rejected',()=>{const bad=structuredClone(manifest);bad.projects[1]=bad.projects[0];assert.ok(validate(bad).some(e=>e.includes('duplicate')));});
 test('planned projects cannot claim tests or implementation evidence',()=>{const bad=structuredClone(manifest),p=bad.projects.find(p=>p.implementation==='planned');p.local_tests=1;assert.ok(validate(bad).some(e=>e.includes('planned project claims')));});
 test('foreign repository and CI links are rejected',()=>{const bad=structuredClone(manifest);bad.projects[0].url='https://example.invalid';bad.projects[0].ci_url='https://github.com/other/repo/actions/runs/1';assert.ok(validate(bad).length>=2);});

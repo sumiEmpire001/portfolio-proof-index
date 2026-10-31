@@ -11,7 +11,7 @@ async function start(){
   if(errors.length)throw new Error('Catalogue validation failed: '+errors.join('; '));
   const totals=summary(manifest.projects);
   byId('owner').textContent=manifest.public_name;
-  byId('stats').textContent=`${totals.repositories} repositories · ${totals.implementations} implementations · ${totals.local_tests} local tests · ${totals.ci_verified} CI results verified`;
+  byId('stats').textContent=`${totals.repositories} repositories · ${totals.implementations} implementations · ${totals.local_tests} local tests · ${totals.browser_tests} CI browser scenarios · ${totals.ci_verified} CI results verified`;
   byId('as-of').textContent='Recorded '+manifest.as_of+'. Evidence is a dated snapshot, not live monitoring.';
   for(const category of new Set(manifest.projects.map(p=>p.category))){const option=node('option',category);option.value=category;byId('category').append(option);}
   const render=()=>{
@@ -23,6 +23,7 @@ async function start(){
       if(project.manual_testing){const testing=node('a','Run tests and demo');testing.href=project.testing_url;card.append(testing);}
       const details=node('details','');details.append(node('summary','Verification and evidence'),node('p',project.required_checks));
       details.append(node('p',`${project.local_tests} local tests recorded. Repository existence ${project.repository_verified?'verified':'unverified'}.`));
+      if(project.browser_tests)details.append(node('p',`${project.browser_tests} Chromium browser scenarios passed in CI. These are separate from local tests.`));
       if(project.commit){const commit=node('a','Implementation commit');commit.href=project.url+'/commit/'+project.commit;details.append(commit);}
       if(project.ci_url){details.append(node('br',''));const ci=node('a','Verified CI run');ci.href=project.ci_url;details.append(ci);}
       card.append(details);return card;

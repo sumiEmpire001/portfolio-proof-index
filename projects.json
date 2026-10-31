@@ -86,12 +86,13 @@
       "category": "Backend and distributed application patterns",
       "url": "https://github.com/sumiEmpire001/metered-api",
       "repository_verified": true,
-      "implementation": "planned",
-      "local_tests": 0,
-      "commit": null,
-      "ci_url": null,
-      "manual_testing": false,
-      "testing_url": null
+      "implementation": "published",
+      "local_tests": 12,
+      "commit": "0d132e9cb427d5f8ca6a998933ec8dccb2950069",
+      "ci_url": "https://github.com/sumiEmpire001/metered-api/actions/runs/41149734527",
+      "manual_testing": true,
+      "testing_url": "https://github.com/sumiEmpire001/metered-api/actions/workflows/test.yml",
+      "browser_tests": 0
     },
     {
       "id": 7,
@@ -101,12 +102,13 @@
       "category": "Backend and distributed application patterns",
       "url": "https://github.com/sumiEmpire001/tenantdesk",
       "repository_verified": true,
-      "implementation": "planned",
-      "local_tests": 0,
-      "commit": null,
-      "ci_url": null,
-      "manual_testing": false,
-      "testing_url": null
+      "implementation": "published",
+      "local_tests": 12,
+      "commit": "2fc57166935026ec341b7d06be0fbfbadd64b2cb",
+      "ci_url": "https://github.com/sumiEmpire001/tenantdesk/actions/runs/41149980506",
+      "manual_testing": true,
+      "testing_url": "https://github.com/sumiEmpire001/tenantdesk/actions/workflows/test.yml",
+      "browser_tests": 0
     },
     {
       "id": 8,
@@ -116,12 +118,13 @@
       "category": "Backend and distributed application patterns",
       "url": "https://github.com/sumiEmpire001/config-vault-local",
       "repository_verified": true,
-      "implementation": "planned",
-      "local_tests": 0,
-      "commit": null,
-      "ci_url": null,
-      "manual_testing": false,
-      "testing_url": null
+      "implementation": "published",
+      "local_tests": 12,
+      "commit": "a20bc9d993a05bb9be420a968edd3e828854ff07",
+      "ci_url": "https://github.com/sumiEmpire001/config-vault-local/actions/runs/41150180461",
+      "manual_testing": true,
+      "testing_url": "https://github.com/sumiEmpire001/config-vault-local/actions/workflows/test.yml",
+      "browser_tests": 0
     },
     {
       "id": 9,
@@ -131,12 +134,13 @@
       "category": "Backend and distributed application patterns",
       "url": "https://github.com/sumiEmpire001/fileflow-service",
       "repository_verified": true,
-      "implementation": "planned",
-      "local_tests": 0,
-      "commit": null,
-      "ci_url": null,
-      "manual_testing": false,
-      "testing_url": null
+      "implementation": "published",
+      "local_tests": 13,
+      "commit": "694a1fba26cea04680faeb83697da25ca58b2afa",
+      "ci_url": "https://github.com/sumiEmpire001/fileflow-service/actions/runs/41150584448",
+      "manual_testing": true,
+      "testing_url": "https://github.com/sumiEmpire001/fileflow-service/actions/workflows/test.yml",
+      "browser_tests": 0
     },
     {
       "id": 10,
@@ -146,12 +150,13 @@
       "category": "Backend and distributed application patterns",
       "url": "https://github.com/sumiEmpire001/notification-router",
       "repository_verified": true,
-      "implementation": "planned",
-      "local_tests": 0,
-      "commit": null,
-      "ci_url": null,
-      "manual_testing": false,
-      "testing_url": null
+      "implementation": "published",
+      "local_tests": 14,
+      "commit": "70971c3dc7fecd485cf75824f0983a8bf8ea6343",
+      "ci_url": "https://github.com/sumiEmpire001/notification-router/actions/runs/41150733074",
+      "manual_testing": true,
+      "testing_url": "https://github.com/sumiEmpire001/notification-router/actions/workflows/test.yml",
+      "browser_tests": 0
     },
     {
       "id": 11,
@@ -551,12 +556,13 @@
       "category": "Web products and collaboration",
       "url": "https://github.com/sumiEmpire001/accessible-catalog",
       "repository_verified": true,
-      "implementation": "planned",
-      "local_tests": 0,
-      "commit": null,
-      "ci_url": null,
-      "manual_testing": false,
-      "testing_url": null
+      "implementation": "published",
+      "local_tests": 12,
+      "commit": "e0c0b434c6429afeeb3b284862bb1c26f0777903",
+      "ci_url": "https://github.com/sumiEmpire001/accessible-catalog/actions/runs/41149372038",
+      "manual_testing": true,
+      "testing_url": "https://github.com/sumiEmpire001/accessible-catalog/actions/workflows/test.yml",
+      "browser_tests": 13
     },
     {
       "id": 38,
@@ -1451,12 +1457,13 @@
       "category": "Reliability, quality and accessibility",
       "url": "https://github.com/sumiEmpire001/accessibility-regression-kit",
       "repository_verified": true,
-      "implementation": "planned",
-      "local_tests": 0,
-      "commit": null,
-      "ci_url": null,
-      "manual_testing": false,
-      "testing_url": null
+      "implementation": "published",
+      "local_tests": 12,
+      "commit": "73bd482c40c6c77a5a583649baa235a236bee89c",
+      "ci_url": "https://github.com/sumiEmpire001/accessibility-regression-kit/actions/runs/41148979595",
+      "manual_testing": true,
+      "testing_url": "https://github.com/sumiEmpire001/accessibility-regression-kit/actions/workflows/test.yml",
+      "browser_tests": 12
     },
     {
       "id": 98,
